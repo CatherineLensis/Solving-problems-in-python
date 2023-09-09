@@ -5,8 +5,10 @@ Non-overlapping Intervals
 Given an array of intervals intervals where `intervals[i] = [starti, endi]`, return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 
 Учитывая массив интервалов intervals где `intervals[i] = [starti, endi]`, верните минимальное количество интервалов, которое необходимо удалить, чтобы остальные интервалы не перекрывались.
+<p>
 Example 1:
 Input: 
+ </p>
 ```
 intervals = [[1,2],[2,3],[3,4],[1,3]]
 ```
