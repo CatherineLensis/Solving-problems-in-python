@@ -8,8 +8,9 @@ Given an array of intervals intervals where `intervals[i] = [starti, endi]`, ret
 <p>
 Example 1:
 Input: 
- </p>
-```
+</p>
+ 
+```bash
 intervals = [[1,2],[2,3],[3,4],[1,3]]
 ```
 Output:
