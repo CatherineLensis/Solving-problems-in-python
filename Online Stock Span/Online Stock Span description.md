@@ -7,7 +7,7 @@ Online Stock Span
 Например, если цена акции за последние четыре дня равна [7,2,1,2], цена акции сегодня равна 2, то интервал сегодняшнего дня равен 4 потому что, начиная с сегодняшнего дня, цена акции была меньше или равна 2 в течение 4 последовательных дней.
 Кроме того, если цена акции за последние четыре дня равна [7,34,1,2],  цена акции сегодня равна 8, то интервал сегодняшнего дня равен 3 потому что, начиная с сегодняшнего дня цена акции была меньше или равна 8 в течение 3 последовательных дней.
 
-Реализуйте StockSpannerкласс:
+Реализуйте StockSpanner класс:
 
 StockSpanner()Инициализирует объект класса.
 int next(int price)Возвращает интервал цены акции, учитывая, что сегодняшняя цена равна price.
@@ -36,6 +36,7 @@ Output
 [null, 1, 1, 1, 2, 1, 4, 6]
 ```
 Explanation
+```
 StockSpanner stockSpanner = new StockSpanner();
 stockSpanner.next(100); // return 1
 stockSpanner.next(80);  // return 1
@@ -44,6 +45,7 @@ stockSpanner.next(70);  // return 2
 stockSpanner.next(60);  // return 1
 stockSpanner.next(75);  // return 4, because the last 4 prices (including today's price of 75) were less than or equal to today's price.
 stockSpanner.next(85);  // return 6
+```
 Constraints:
 ```
 1 <= price <= 10^5
