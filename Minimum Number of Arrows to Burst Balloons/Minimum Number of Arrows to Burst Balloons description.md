@@ -1,4 +1,4 @@
-К плоской стене, представляющей плоскость XY, приклеено несколько сферических воздушных шаров. Воздушные шары представлены в виде двумерного целочисленного массива points, где points[i] = [xstart, xend]обозначает воздушный шар, горизонтальный диаметр которого простирается между xstart и xend . Вы не знаете точных координат Y воздушных шаров.
+К плоской стене, представляющей плоскость XY, приклеено несколько сферических воздушных шаров. Воздушные шары представлены в виде двумерного целочисленного массива points, где points[i] = [xstart, xend] обозначает воздушный шар, горизонтальный диаметр которого простирается между xstart и xend . Вы не знаете точных координат Y воздушных шаров.
 
 Стрелки можно стрелять прямо вертикально (в положительном направлении Y) из разных точек вдоль оси X. Воздушный шар с xstart и xend лопается от выстрела стрелы x, если xstart<=x<= xend . Нет ограничений на количество выпущенных стрел. Выпущенная стрела продолжает двигаться вверх бесконечно, разрывая все воздушные шары на своем пути. 
 Учитывая массив points, верните минимальное количество стрел, которое необходимо выпустить, чтобы лопнуть все воздушные шары.
@@ -11,29 +11,51 @@ Given the array points, return the minimum number of arrows that must be shot to
 
 Example 1:
 
-Input: points = [[10,16],[2,8],[1,6],[7,12]]
-Output: 2
-Explanation: The balloons can be burst by 2 arrows:
+Input:
+```
+points = [[10,16],[2,8],[1,6],[7,12]]
+```
+Output:
+```
+2
+```
+Explanation:
+The balloons can be burst by 2 arrows:
+```
 - Shoot an arrow at x = 6, bursting the balloons [2,8] and [1,6].
 - Shoot an arrow at x = 11, bursting the balloons [10,16] and [7,12].
+```
 Example 2:
-
-Input: points = [[1,2],[3,4],[5,6],[7,8]]
-Output: 4
+Input: 
+```
+points = [[1,2],[3,4],[5,6],[7,8]]
+```
+Output: 
+```
+4
+```
 Explanation: One arrow needs to be shot for each balloon for a total of 4 arrows.
 Example 3:
 
-Input: points = [[1,2],[2,3],[3,4],[4,5]]
-Output: 2
+Input:
+```
+points = [[1,2],[2,3],[3,4],[4,5]]
+```
+Output: 
+```
+2
+```
 Explanation: The balloons can be burst by 2 arrows:
+```
 - Shoot an arrow at x = 2, bursting the balloons [1,2] and [2,3].
 - Shoot an arrow at x = 4, bursting the balloons [3,4] and [4,5].
-Ограничения:
-
+```
+Constraints:
+```
 1 <= points.length <= 10^5
 points[i].length == 2
 -2^31 <= xstart < xend <= 2^31 - 1
-
+```
 
 Решение.
 Сначала мы сортируем список точек по конечной координате. Затем мы инициализируем переменную arrow_count значением 1 и устанавливаем начальную и конечную координаты первой точки как текущие начальную и конечную координаты.
