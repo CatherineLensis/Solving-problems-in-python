@@ -1,11 +1,11 @@
-К плоской стене, представляющей плоскость XY, приклеено несколько сферических воздушных шаров. Воздушные шары представлены в виде двумерного целочисленного массива points, где points[i] = [xstart, xend] обозначает воздушный шар, горизонтальный диаметр которого простирается между xstart и xend . Вы не знаете точных координат Y воздушных шаров.
+К плоской стене, представляющей плоскость XY, приклеено несколько сферических воздушных шаров. Воздушные шары представлены в виде двумерного целочисленного массива points, где `points[i] = [xstart, xend]` обозначает воздушный шар, горизонтальный диаметр которого простирается между `xstart` и `xend` . Вы не знаете точных координат Y воздушных шаров.
 
-Стрелки можно стрелять прямо вертикально (в положительном направлении Y) из разных точек вдоль оси X. Воздушный шар с xstart и xend лопается от выстрела стрелы x, если xstart<=x<= xend . Нет ограничений на количество выпущенных стрел. Выпущенная стрела продолжает двигаться вверх бесконечно, разрывая все воздушные шары на своем пути. 
-Учитывая массив points, верните минимальное количество стрел, которое необходимо выпустить, чтобы лопнуть все воздушные шары.
+Стрелки можно стрелять прямо вертикально (в положительном направлении Y) из разных точек вдоль оси X. Воздушный шар с `xstart` и `xend` лопается от выстрела стрелы x, если `xstart<=x<=xend` . Нет ограничений на количество выпущенных стрел. Выпущенная стрела продолжает двигаться вверх бесконечно, разрывая все воздушные шары на своем пути. 
+Учитывая массив `points`, верните минимальное количество стрел, которое необходимо выпустить, чтобы лопнуть все воздушные шары.
 
-There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array points where points[i] = [xstart, xend] denotes a balloon whose horizontal diameter stretches between xstart and xend. You do not know the exact y-coordinates of the balloons.
+There are some spherical balloons taped onto a flat wall that represents the XY-plane. The balloons are represented as a 2D integer array points where `points[i] = [xstart, xend]` denotes a balloon whose horizontal diameter stretches between xstart and xend. You do not know the exact y-coordinates of the balloons.
 
-Arrows can be shot up directly vertically (in the positive y-direction) from different points along the x-axis. A balloon with xstart and xend is burst by an arrow shot at x if xstart <= x <= xend. There is no limit to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.
+Arrows can be shot up directly vertically (in the positive y-direction) from different points along the x-axis. A balloon with xstart and xend is burst by an arrow shot at `x` if `xstart<=x<=xend`. There is no limit to the number of arrows that can be shot. A shot arrow keeps traveling up infinitely, bursting any balloons in its path.
 
 Given the array points, return the minimum number of arrows that must be shot to burst all balloons.
 
